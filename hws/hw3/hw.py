@@ -88,7 +88,6 @@ if __name__ == '__main__':
     print(t3.is_failed)
 
     #Road map
-
     tl = list()
     tl.append(Task('1', today))
     tl.append(Task('2', today))
