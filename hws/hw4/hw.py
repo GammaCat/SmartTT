@@ -52,24 +52,7 @@ def is_critical(task):
     return False
 
 
-# ds = get_dataset(DATASET_FILENAME)
-#
-# for item in ds:
-#     print(item)
-#     task = Task(item[0], item[2], item[1])
-#     print(task)
-#     print(is_critical(task), task.is_failed, end='\n\n')
-#
-#
-# def wsgi_critical_tasks(environment, start_response):
-#     http_headers = [
-#         ('Content-type', 'text/plain; charset=utf-8'),
-#     ]
-#
-#     start_response('200 OK', http_headers)
-#
-
 if __name__ == '__main__':
 
-    srv = make_server('127.0.0.2', 80, WSGICriticalTasks)
+    srv = make_server('127.0.0.1', 80, WSGICriticalTasks)
     srv.serve_forever()
