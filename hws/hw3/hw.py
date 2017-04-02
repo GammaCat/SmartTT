@@ -44,7 +44,7 @@ class Task:
         self.state = TASK_STATES.ready
 
     def __str__(self):
-        return 'Title: {} | Estimate {} | State {} '.format(self.title, self.estimate, self.state)
+        return 'Title: {} | Estimate: {} | State: {} '.format(self.title, self.estimate, self.state)
 
 
 class TodayTasks:
